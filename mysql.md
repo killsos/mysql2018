@@ -14,4 +14,24 @@
 	
 	sql标准严格
 	
+4. 客户端与服务端
 	
+	mysql	客户端
+	
+	mysqld  服务器端  d daemon 守护服务 后台程序
+
+5. 命令行显示数据乱码
+	
+	那是因为命令行程序使用字符集与数据库的字符集不一致造成的
+	
+	例如 windows系统命令行程序字符集默认 GBK字符集 而数据库默认是 utf8字符集
+	
+	解决办法: set names gbk; 这行代码是告诉mysql服务器请你的utf8字符数据转为GBK字符集返给命令行程序
+
+6. sql语句遇见 ; 认为结束 
+
+7. Error 1064 一定sql语句错误
+
+8. 使用tee记录mysql client 所有的操作
+	
+	mysql> tee client_mysql.log 
