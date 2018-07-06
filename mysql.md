@@ -35,3 +35,5 @@
 8. 使用tee记录mysql client 所有的操作
 	
 	mysql> tee client_mysql.log 
+	
+9. ERROR 1306 因为客户端没有声明字符集  解决办法 set name 客户端字符集;  告诉服务端 客户端传输过来数据字符集 便于解析
