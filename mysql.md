@@ -48,4 +48,6 @@
 	
 	myi 代表 表的索引
 	
-	
+12. set profiling=on; // 开启性能监控
+
+13. show  profiles; // 查看性能监控数据
